@@ -11,7 +11,7 @@ body{
     left:25%;
     top:35%;
 
-    box-shadow: outset;
+    box-shadow: none;
 }
 
 #preview{
