@@ -31,10 +31,12 @@ body{
     top:80%;
     border:0.1px solid black;
     border-radius: 5px;
+    height:25px;
+    width:20px;
 }
 
 #container button:hover{
-    background-color: aquamarine;
+    background-color: rgb(255, 145, 0);
     border:0.1px solid black;
     border-radius: 5px;
 }
