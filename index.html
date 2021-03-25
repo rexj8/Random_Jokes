@@ -12,12 +12,16 @@
 
     <div id="container">
         <h1 id="preview"></h1>
-        <button onclick="getJokes()"></button>
+        <button onclick="getJokes()">Get Next Joke</button>
     </div>
 
     <script>
         function getJokes(){
-            
+            document.getElementById("preview").innerHTML="";
+
+            const preview=document.querySelector('#preview');
+
+            const request = new XMLHttpRequest();
         }
     </script>
     
