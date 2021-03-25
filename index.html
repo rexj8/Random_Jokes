@@ -34,9 +34,11 @@
 
                 const htmlData=`
                     <h1>${data.setup}</h1>
-                    
+                    <h2>${data.punchline}</h1>
                 `;
             });
+
+            preview.insertAdjacentHTML("afterbegin" , htmlData);
         }
     </script>
     
