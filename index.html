@@ -18,6 +18,26 @@
     </div>
 
     <script>
+
+        const preview=document.querySelector('#preview');
+
+        const request = new XMLHttpRequest();
+
+        request.open('GET' , "https://official-joke-api.appspot.com/random_joke");
+
+        request.send();
+
+        request.addEventListener('load' , function(){
+            const data = JSON.parse(this.responseText);
+            // console.log(data.setup);
+
+            const htmlData=`
+                <h1 style="color:red;">${data.setup}</h1>
+                <h2 style="color:green;">${data.punchline}</h1>
+            `;
+            preview.insertAdjacentHTML("afterbegin" , htmlData);
+        });
+
         function getJokes(){
             document.getElementById("preview").innerHTML="";
 
