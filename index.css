@@ -33,10 +33,12 @@ body{
     border-radius: 5px;
     height:25px;
     width:140px;
+    box-shadow: 3px 12px 20px 0px;
 }
 
 #container button:hover{
     background-color: rgb(255, 145, 0);
     border:0.1px solid black;
     border-radius: 5px;
+    box-shadow: 3px 12px 20px 0px;
 }
