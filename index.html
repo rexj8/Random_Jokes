@@ -11,7 +11,9 @@
 <body>
 
     <div id="container">
-        <h1 id="preview"></h1>
+        <div class="preview">
+
+        </div>
         <button onclick="getJokes()">Get Next Joke</button>
     </div>
 
@@ -22,6 +24,18 @@
             const preview=document.querySelector('#preview');
 
             const request = new XMLHttpRequest();
+
+            request.open('GET' , "https://official-joke-api.appspot.com/random_joke");
+
+            request.send();
+
+            request.addEventListener('load' , function(){
+                const [data] = JSON.parse(this.responseText);
+
+                const htmlData=`
+                    
+                `;
+            });
         }
     </script>
     
