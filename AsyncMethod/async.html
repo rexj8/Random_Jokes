@@ -24,13 +24,13 @@
 
             const setHeader = {
                 headers:{
-                    Accept : 
+                    Accept : "application/json"
                 }
             }
 
             fetch('https://icanhazdadjoke.com' , setHeader)
             .then((res) => {
-                console.log(res.json());
+                res.json();
             }).catch((error) => {
                 console.log(error);
             })
