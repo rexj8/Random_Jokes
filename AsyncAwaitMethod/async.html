@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>😍 Best Jokes to make your day 😎</h3>
+        <div class="joke" id="joke">Awesome Joke is loading</div>
+        <button id="jokeBtn" class="btn">Next Joke</button>
+    </div>
+
+    <script>
+
+        const jokes = document.querySelector('#joke');
+
+        const jokeBtn = document.querySelector('#jokeBtn');
+
+        // To create normal function -> async function
+        // async function func(){}
+
+        const generateJokes = async () => {
+
+            const setHeader = {
+                headers:{
+                    Accept : "application/json"
+                }
+            }
+
+            fetch('https://icanhazdadjoke.com' , setHeader)
+            .then((res) => res.json() )
+            .then((data)=>{
+                jokes.innerHTML = data.joke;
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
