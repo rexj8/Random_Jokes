@@ -25,8 +25,8 @@
             fetch('https://icanhazdadjoke.com')
             .then((res) => {
                 res.json
-            })
-            
+            }).catch((error) => )
+
         }
 
         jokeBtn.addEventListener('click' , generateJokes);
