@@ -22,9 +22,13 @@
 
         const generateJokes = () => {
 
-            fetch('https://icanhazdadjoke.com')
+            const setHeader = {
+                
+            }
+
+            fetch('https://icanhazdadjoke.com' , setHeader)
             .then((res) => {
-                console.log(res.json);
+                console.log(res.json());
             }).catch((error) => {
                 console.log(error);
             })
