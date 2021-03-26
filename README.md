@@ -2,5 +2,8 @@
 
  https://rexj8.github.io/Random_Jokes/XMLHttpRequest/XHR.html
 
- https://rexj8.github.io/Random_Jokes/AsyncAwaitMethod.html
+ https://rexj8.github.io/Random_Jokes/AsyncAwaitMethod/async.html
+
+ https://rexj8.github.io/Random_Jokes/PromisesMethod/promises.html
+
 
