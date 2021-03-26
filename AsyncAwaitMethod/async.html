@@ -32,16 +32,17 @@
             }
 
             const res = await fetch('https://icanhazdadjoke.com' , setHeader)
+            const data = await res.json();
+            jokes.innerHTML = data.joke;
 
-            
-
-            .then((res) => res.json() )
-            .then((data)=>{
-                jokes.innerHTML = data.joke;
-            })
-            .catch((error) => {
-                console.log(error);
-            })
+            // NOW NEED TO WRITE THIS CODE
+            // .then((res) => res.json() )
+            // .then((data)=>{
+            //     jokes.innerHTML = data.joke;
+            // })
+            // .catch((error) => {
+            //     console.log(error);
+            // })
 
         }
 
