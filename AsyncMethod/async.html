@@ -20,9 +20,13 @@
 
         const jokeBtn = document.querySelector('#jokeBtn');
 
-        function generateJokes = () => {
+        const generateJokes = () => {
+
             fetch('https://icanhazdadjoke.com')
-            .then()
+            .then((res) => {
+                res.json
+            })
+            
         }
 
         jokeBtn.addEventListener('click' , generateJokes);
