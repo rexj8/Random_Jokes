@@ -31,7 +31,10 @@
                 }
             }
 
-            fetch('https://icanhazdadjoke.com' , setHeader)
+            const res = await fetch('https://icanhazdadjoke.com' , setHeader)
+
+            
+
             .then((res) => res.json() )
             .then((data)=>{
                 jokes.innerHTML = data.joke;
